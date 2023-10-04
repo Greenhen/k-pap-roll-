@@ -1,0 +1,53 @@
+body{
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+#game{
+    margin:150px auto;
+    display: flex;
+    justify-content: space-around;
+    width: 950px;
+}
+.box{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px;
+    overflow: hidden;
+    height: 350px;
+    width: 350px;
+    box-shadow:1px 5px 10px;
+    background-color: antiquewhite;
+}
+
+#buttons{
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+    display:flex;
+    justify-content: space-between;
+}
+
+img{
+   width: 150px;
+}
+
+h1 {
+    text-align: center;
+}
+#buttons:hover{
+    cursor: pointer;
+}
+
+#result{
+    height: 60px;
+    text-align: center;
+    font-size: 70px;
+    color: aliceblue;
+    
+}
