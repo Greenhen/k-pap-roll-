@@ -1,7 +1,5 @@
-/*let stone = document.querySelector('#stone');
-let paper = document.querySelector('#paper');
-let scissor = document.querySelector('#scissor');*/
-let userBox = document.querySelector('#user');
+
+ let userBox = document.querySelector('#user');
 let userImage = document.createElement('img');
 userBox.appendChild(userImage);
 
