@@ -1,5 +1,5 @@
 
- let userBox = document.querySelector('#user');
+let userBox = document.querySelector('#user');
 let userImage = document.createElement('img');
 userBox.appendChild(userImage);
 
