@@ -12,7 +12,6 @@ function chooseStone() {
     userImage.src = "img/img0.png";
     setTimeout(function(){ 
     cpuImage.src = "img/img"+cpu+".png";
-  },500)
     console.log(cpu);
     if (cpu === 0) {
         let result = document.querySelector('#result').innerHTML = 'Döntetlen'
@@ -20,7 +19,8 @@ function chooseStone() {
         let result = document.querySelector('#result').innerHTML = 'Csicska vagy!'
     } else {
         let result = document.querySelector('#result').innerHTML = 'Nyertél'
-    }   
+    } 
+ },500)
 }
 
 function chooseStone1() {
@@ -28,7 +28,6 @@ function chooseStone1() {
     userImage.src = "img/img1.png"
     setTimeout(function(){ 
     cpuImage.src = "img/img"+cpu+".png";
-  },500)
     if (cpu === 1) {
         let result = document.querySelector('#result').innerHTML = 'Döntetlen'
     } else if (cpu === 2){
@@ -36,6 +35,7 @@ function chooseStone1() {
     } else {
         let result = document.querySelector('#result').innerHTML = 'Nyertél!'
     }
+ },500)
 }
 
 function chooseStone2() {
@@ -43,7 +43,6 @@ function chooseStone2() {
     userImage.src = "img/img2.png"
     setTimeout(function(){ 
     cpuImage.src = "img/img"+cpu+".png";
-  },500)
     if (cpu === 2) {
         let result = document.querySelector('#result').innerHTML = 'Döntetlen'
     } else if (cpu === 0){
@@ -51,6 +50,7 @@ function chooseStone2() {
     } else {
         let result =  document.querySelector('#result').innerHTML = 'Nyertél'
     }
+ },500)
 }
 stone.addEventListener("click", chooseStone);
 paper.addEventListener("click", chooseStone1);
