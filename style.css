@@ -55,5 +55,29 @@ h1 {
     font-size: 70px;
     color: aliceblue;
     margin:0;
-    
+}
+
+@media (max-width:568px) {
+    img{
+        width: 80px;
+    }
+    #buttons{
+        width: 60%;
+    }
+    .box{
+        height:100px;
+        width:30%;
+    }
+    body{
+        width:568px
+    }
+    #game{
+        width: 325px;
+    }
+    h1{
+        font-size: 18px;
+    }
+    #result{
+        font-size: 30px;
+    }
 }
