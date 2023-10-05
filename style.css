@@ -2,18 +2,21 @@ body{
     background-image: url(img/background.jpg);
     background-size: cover;
     background-position: center;
-    position: relative;
+    /*position: relative;*/
    
     
     
    
-    
+  
 }
+
+
+
 #game{
     margin:50px auto;
     display: flex;
     justify-content: space-around;
-    width: 650px;
+    width: 100%;
 }
 .box{
     
@@ -24,7 +27,7 @@ body{
     border: solid 1px;
     overflow: hidden;
     height: 200px;
-    width: 30%;
+    width: 20%;
     box-shadow:1px 5px 10px;
     background-color: antiquewhite;
 }
@@ -32,14 +35,21 @@ body{
 #buttons{
     margin-right: auto;
     margin-left: auto;
-    width: 35%;
+    width: 65%;
     display:flex;
+    align-content: center;
     justify-content: space-between;
+    justify-items: center;
+    
     
 }
 
 img{
-   width: 150px;
+    width: 75%;
+}
+
+.button{
+   width: 20%;
 }
 
 h1 {
