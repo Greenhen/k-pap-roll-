@@ -67,28 +67,29 @@ h1 {
     margin:0;
 }
 
-@media (max-width:560px) {
+@media all and (max-width:1200px) {
     img{
-        width: 60px;
+        width: 40%;
     }
     #buttons{
-        width: 60%;
+        width: 75%;
     }
     .box{
-        height:100px;
-        width:30%;
+        height:auto;
+        width:40%;
     }
     body{
-        width:568px
+        width:100%;
     }
     #game{
-        width: 325px;
+        height: 200px;
+        width:100%;
         margin-top: 0;
     }
     h1{
         font-size: 18px;
     }
     #result{
-        font-size: 30px;
+      font-size: 30px;        
     }
 }
