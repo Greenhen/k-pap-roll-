@@ -12,7 +12,6 @@ function chooseStone() {
     userImage.src = "img/img0.png";
     setTimeout(function(){ 
     cpuImage.src = "img/img"+cpu+".png";
-    console.log(cpu);
     if (cpu === 0) {
         let result = document.querySelector('#result').innerHTML = 'Döntetlen'
     } else if (cpu === 1){
