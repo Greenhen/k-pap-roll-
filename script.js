@@ -10,7 +10,9 @@ cpuBox.appendChild(cpuImage);
 function chooseStone() {
     let cpu = Math.round(Math.random()*2)
     userImage.src = "img/img0.png";
+    setTimeout(function(){ 
     cpuImage.src = "img/img"+cpu+".png";
+  },500)
     console.log(cpu);
     if (cpu === 0) {
         let result = document.querySelector('#result').innerHTML = 'Döntetlen'
@@ -24,7 +26,9 @@ function chooseStone() {
 function chooseStone1() {
     let cpu = Math.round(Math.random()*2)
     userImage.src = "img/img1.png"
-    cpuImage.src = "img/img"+cpu+".png"
+    setTimeout(function(){ 
+    cpuImage.src = "img/img"+cpu+".png";
+  },500)
     if (cpu === 1) {
         let result = document.querySelector('#result').innerHTML = 'Döntetlen'
     } else if (cpu === 2){
@@ -37,7 +41,9 @@ function chooseStone1() {
 function chooseStone2() {
     let cpu = Math.round(Math.random()*2)
     userImage.src = "img/img2.png"
-     cpuImage.src = "img/img"+cpu+".png"
+    setTimeout(function(){ 
+    cpuImage.src = "img/img"+cpu+".png";
+  },500)
     if (cpu === 2) {
         let result = document.querySelector('#result').innerHTML = 'Döntetlen'
     } else if (cpu === 0){
