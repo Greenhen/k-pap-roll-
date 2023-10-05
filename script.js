@@ -1,4 +1,4 @@
-//buzigeci
+
  let userBox = document.querySelector('#user');
 let userImage = document.createElement('img');
 userBox.appendChild(userImage);
@@ -6,6 +6,16 @@ userBox.appendChild(userImage);
 let cpuBox = document.querySelector("#cpu");
 let cpuImage = document.createElement("img");
 cpuBox.appendChild(cpuImage);
+let result = document.querySelector('#result');  //nullázáshoz létrehozott változó
+
+
+function init(){                   //nullázza az értékeket
+  cpuImage.src="";
+  userImage.src="";
+  result.innerHTML="";
+  
+}
+
 
 function chooseStone() {
     let cpu = Math.round(Math.random()*2)
@@ -13,47 +23,50 @@ function chooseStone() {
     setTimeout(function(){ 
     cpuImage.src = "img/img"+cpu+".png";
     if (cpu === 0) {
-        let result = document.querySelector('#result').innerHTML = 'Döntetlen'
+        result.innerHTML = 'Döntetlen'
     } else if (cpu === 1){
-        let result = document.querySelector('#result').innerHTML = 'Csicska vagy!'
+        result.innerHTML = 'Csicska vagy!'
     } else {
-        let result = document.querySelector('#result').innerHTML = 'Nyertél'
+        result.innerHTML = 'Nyertél'
     } 
  },500)
+ setTimeout(init,2000)                 //2mp-el az eredmény kihirdetése után nulláz
 }
 
-function chooseStone1() {
+function choosePaper() {
     let cpu = Math.round(Math.random()*2)
     userImage.src = "img/img1.png"
     setTimeout(function(){ 
     cpuImage.src = "img/img"+cpu+".png";
     if (cpu === 1) {
-        let result = document.querySelector('#result').innerHTML = 'Döntetlen'
+         result.innerHTML = 'Döntetlen'
     } else if (cpu === 2){
-        let result = document.querySelector('#result').innerHTML = 'Csicska vagy!'
+         result.innerHTML = 'Csicska vagy!'
     } else {
-        let result = document.querySelector('#result').innerHTML = 'Nyertél!'
+         result.innerHTML = 'Nyertél!'
     }
  },500)
+ setTimeout(init,2000)
 }
 
-function chooseStone2() {
+function chooseScissor() {
     let cpu = Math.round(Math.random()*2)
     userImage.src = "img/img2.png"
     setTimeout(function(){ 
     cpuImage.src = "img/img"+cpu+".png";
     if (cpu === 2) {
-        let result = document.querySelector('#result').innerHTML = 'Döntetlen'
+         result.innerHTML = 'Döntetlen'
     } else if (cpu === 0){
-        let result = document.querySelector('#result').innerHTML = 'Csicska vagy!'
+         result.innerHTML = 'Csicska vagy!'
     } else {
-        let result =  document.querySelector('#result').innerHTML = 'Nyertél'
+         result.innerHTML = 'Nyertél'
     }
  },500)
+ setTimeout(init,2000)
 }
 stone.addEventListener("click", chooseStone);
-paper.addEventListener("click", chooseStone1);
-scissor.addEventListener("click", chooseStone2);
+paper.addEventListener("click", choosePaper);
+scissor.addEventListener("click", chooseScissor);
 
 
 
