@@ -27,7 +27,7 @@ function chooseStone() {
     } else if (cpu === 1){
         result.innerHTML = 'Csicska vagy!'
     } else {
-        result.innerHTML = 'Nyertél'
+        result.innerHTML = 'You won'
     } 
  },500)
  setTimeout(init,2000)                 //2mp-el az eredmény kihirdetése után nulláz
@@ -43,7 +43,7 @@ function choosePaper() {
     } else if (cpu === 2){
          result.innerHTML = 'Csicska vagy!'
     } else {
-         result.innerHTML = 'Nyertél!'
+         result.innerHTML = 'You won'
     }
  },500)
  setTimeout(init,2000)
@@ -59,7 +59,7 @@ function chooseScissor() {
     } else if (cpu === 0){
          result.innerHTML = 'Csicska vagy!'
     } else {
-         result.innerHTML = 'Nyertél'
+         result.innerHTML = 'You won'
     }
  },500)
  setTimeout(init,2000)
