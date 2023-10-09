@@ -23,9 +23,9 @@ function chooseStone() {
     setTimeout(function(){ 
     cpuImage.src = "img/img"+cpu+".png";
     if (cpu === 0) {
-        result.innerHTML = 'Döntetlen'
+        result.innerHTML = 'Draw'
     } else if (cpu === 1){
-        result.innerHTML = 'Csicska vagy!'
+        result.innerHTML = 'You jerk!'
     } else {
         result.innerHTML = 'You won'
     } 
@@ -39,9 +39,9 @@ function choosePaper() {
     setTimeout(function(){ 
     cpuImage.src = "img/img"+cpu+".png";
     if (cpu === 1) {
-         result.innerHTML = 'Döntetlen'
+         result.innerHTML = 'Draw'
     } else if (cpu === 2){
-         result.innerHTML = 'Csicska vagy!'
+         result.innerHTML = 'You jerk!'
     } else {
          result.innerHTML = 'You won'
     }
@@ -55,9 +55,9 @@ function chooseScissor() {
     setTimeout(function(){ 
     cpuImage.src = "img/img"+cpu+".png";
     if (cpu === 2) {
-         result.innerHTML = 'Döntetlen'
+         result.innerHTML = 'Draw'
     } else if (cpu === 0){
-         result.innerHTML = 'Csicska vagy!'
+         result.innerHTML = 'You jerk!'
     } else {
          result.innerHTML = 'You won'
     }
