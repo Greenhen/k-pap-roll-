@@ -1,4 +1,7 @@
-
+let timedOut = false;
+let stone = document.querySelector('#stone');
+let paper = document.querySelector('#paper');
+let scissor = document.querySelector('#scissor')
 let userBox = document.querySelector('#user');
 let userImage = document.createElement('img');
 userBox.appendChild(userImage);
@@ -20,7 +23,8 @@ function init(){                   //nullázza az értékeket
 
 function chooseStone() {
     let cpu = Math.round(Math.random()*2)
-    userImage.src = "img/img0.png";
+    userImage.src = "img/img0.png";     
+    }
     setTimeout(function(){
     cpuImage.src = "img/img"+cpu+".png";
     if (cpu === 0) {
@@ -32,7 +36,7 @@ function chooseStone() {
     } 
  },500)
  setTimeout(init,2000)                 //2mp-el az eredmény kihirdetése után nulláz
-}
+
 
 function choosePaper() {
     let cpu = Math.round(Math.random()*2)
@@ -46,9 +50,11 @@ function choosePaper() {
     } else {
          result.innerHTML = 'You won'
     }
+    
  },500)
  
  setTimeout(init,2000)
+ 
 }
 
 function chooseScissor() {
@@ -66,9 +72,19 @@ function chooseScissor() {
           },500)
  setTimeout(init,2000)
 }
-stone.addEventListener("click", chooseStone);
+stone.addEventListener("click", chooseStone), 
 paper.addEventListener("click", choosePaper);
 scissor.addEventListener("click", chooseScissor);
+setTimeout(function(){
+     timedOut = "true"
+},2500);
 
-
-
+function coolDown() {
+     timedOut = true
+     setTimeout(() => {
+          timedOut = false
+     }, 2500);
+}
+function doSomething() {
+     paper.removeEventListener("click", choosePaper)
+}
