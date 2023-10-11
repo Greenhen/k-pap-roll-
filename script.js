@@ -22,9 +22,9 @@ function chooseStone() {
     document.querySelector('.buttons').style.pointerEvents = 'none';
     setTimeout(function(){document.querySelector('.buttons').style.pointerEvents = 'auto'},2500);
     let cpu = Math.round(Math.random()*2)
-    userImage.src = "/img/img0.png";
+    userImage.src = "img/img0.png";
     setTimeout(function(){
-    cpuImage.src = "/img/img"+cpu+".png";
+    cpuImage.src = "img/img"+cpu+".png";
     if (cpu === 0) {
         result.innerHTML = 'Draw'
     } else if (cpu === 1){
@@ -40,9 +40,9 @@ function choosePaper() {
     document.querySelector('.buttons').style.pointerEvents = 'none'
     setTimeout(function(){document.querySelector('.buttons').style.pointerEvents = 'auto'},2500)
     let cpu = Math.round(Math.random()*2)
-    userImage.src = "/img/img1.png"
+    userImage.src = "img/img1.png"
     setTimeout(function(){ 
-    cpuImage.src = "/img/img"+cpu+".png";
+    cpuImage.src = "img/img"+cpu+".png";
     if (cpu === 1) {
          result.innerHTML = 'Draw'
     } else if (cpu === 2){
@@ -59,9 +59,9 @@ function chooseScissor() {
      document.querySelector('.buttons').style.pointerEvents = 'none'
      setTimeout(function(){document.querySelector('.buttons').style.pointerEvents = 'auto'},2500) 
     let cpu = Math.round(Math.random()*2)
-    userImage.src = "/img/img2.png"
+    userImage.src = "img/img2.png"
     setTimeout(function(){
-         cpuImage.src = "/img/img"+cpu+".png";
+         cpuImage.src = "img/img"+cpu+".png";
          if (cpu === 2) {
               result.innerHTML = 'Draw'
           } else if (cpu === 0){
