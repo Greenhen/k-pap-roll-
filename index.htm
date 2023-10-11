@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock, paper, scissors</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id = "mainContainer">
-      <h1>Rock, paper, scissors</h1>
-      <h2 id = "result"></h2>
-      <div id="game">
-      <div class="box" id="user"></div>    
-      <div class="box" id="cpu"></div>
-  </div>
-  <div id = 'buttons'>
-    <img class = "button" id = "stone" src="./img/img0.png" alt="">
-    <img class = "button" id = "paper" src="./img/img1.png" alt="">  
-    <img class = "button" id = "scissor" src="./img/img2.png" alt="">
-    
-  </div>
-  </div>
-  
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+      <div class="header">
+        <div id="name" class="item"><u> Rock, Paper, Scissors</u></div>
+        <div id="result" class="item"><b> </b></div>
+      </div>
+      <div class="flex">
+        <div id="user" class="box"></div>
+        <div id="cpu" class="box"></div>
+      </div>
+      <div class="buttons">
+        <div><img id="rock" src="/img/img0.png" alt="rock"></div>
+        <div><img id="paper" src="/img/img1.png" alt="paper"></div>
+        <div><img id="scissors" src="/img/img2.png" alt="scissors"></div>
+      </div>
 </body>
 <script src="script.js"></script>
 </html>

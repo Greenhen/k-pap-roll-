@@ -20,9 +20,9 @@ function init(){                   //nullázza az értékeket
 
 function chooseStone() {
     let cpu = Math.round(Math.random()*2)
-    userImage.src = "img/img0.png";
+    userImage.src = "/img/img0.png";
     setTimeout(function(){
-    cpuImage.src = "img/img"+cpu+".png";
+    cpuImage.src = "/img/img"+cpu+".png";
     if (cpu === 0) {
         result.innerHTML = 'Draw'
     } else if (cpu === 1){
@@ -36,9 +36,9 @@ function chooseStone() {
 
 function choosePaper() {
     let cpu = Math.round(Math.random()*2)
-    userImage.src = "img/img1.png"
+    userImage.src = "/img/img1.png"
     setTimeout(function(){ 
-    cpuImage.src = "img/img"+cpu+".png";
+    cpuImage.src = "/img/img"+cpu+".png";
     if (cpu === 1) {
          result.innerHTML = 'Draw'
     } else if (cpu === 2){
@@ -53,9 +53,9 @@ function choosePaper() {
 
 function chooseScissor() {
     let cpu = Math.round(Math.random()*2)
-    userImage.src = "img/img2.png"
+    userImage.src = "/img/img2.png"
     setTimeout(function(){
-         cpuImage.src = "img/img"+cpu+".png";
+         cpuImage.src = "/img/img"+cpu+".png";
          if (cpu === 2) {
               result.innerHTML = 'Draw'
           } else if (cpu === 0){
@@ -66,9 +66,9 @@ function chooseScissor() {
           },500)
  setTimeout(init,2000)
 }
-stone.addEventListener("click", chooseStone);
+rock.addEventListener("click", chooseStone);
 paper.addEventListener("click", choosePaper);
-scissor.addEventListener("click", chooseScissor);
+scissors.addEventListener("click", chooseScissor);
 
 
 
