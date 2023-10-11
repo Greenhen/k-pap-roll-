@@ -30,6 +30,7 @@ body{
     background-color: rgb(235, 197, 148);
     
     
+<<<<<<< HEAD
   }
   
   .buttons{
@@ -48,6 +49,10 @@ body{
     display: block;
     margin:25% 15%
   }
+=======
+    
+}
+>>>>>>> 84c5ffcc294d2838b876fcf84cf0808b6f9e8900
 
   #result{
     height: 80px;

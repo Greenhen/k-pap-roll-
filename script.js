@@ -19,6 +19,8 @@ function init(){                   //nullázza az értékeket
 
 
 function chooseStone() {
+    document.querySelector('#buttons').style.pointerEvents = 'none';
+    setTimeout(function(){document.querySelector('#buttons').style.pointerEvents = 'auto'},2500);
     let cpu = Math.round(Math.random()*2)
     userImage.src = "/img/img0.png";
     setTimeout(function(){
@@ -35,6 +37,8 @@ function chooseStone() {
 }
 
 function choosePaper() {
+    document.querySelector('#buttons').style.pointerEvents = 'none'
+    setTimeout(function(){document.querySelector('#buttons').style.pointerEvents = 'auto'},2500)
     let cpu = Math.round(Math.random()*2)
     userImage.src = "/img/img1.png"
     setTimeout(function(){ 
@@ -52,6 +56,8 @@ function choosePaper() {
 }
 
 function chooseScissor() {
+     document.querySelector('#buttons').style.pointerEvents = 'none'
+     setTimeout(function(){document.querySelector('#buttons').style.pointerEvents = 'auto'},2500) 
     let cpu = Math.round(Math.random()*2)
     userImage.src = "/img/img2.png"
     setTimeout(function(){
@@ -68,7 +74,11 @@ function chooseScissor() {
 }
 rock.addEventListener("click", chooseStone);
 paper.addEventListener("click", choosePaper);
+<<<<<<< HEAD
 scissors.addEventListener("click", chooseScissor);
 
 
 
+=======
+scissor.addEventListener("click", chooseScissor)
+>>>>>>> 84c5ffcc294d2838b876fcf84cf0808b6f9e8900
