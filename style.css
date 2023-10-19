@@ -8,7 +8,6 @@ body{
     background-image: url(img/background.jpg);
     background-size: cover;
     background-position: center;
-      
   }
   .item{
      text-align:center;
@@ -20,7 +19,6 @@ body{
   }
   
   .box{
-    
     border:solid 1px;
     margin:1% 2%;
     height:0;
@@ -28,20 +26,14 @@ body{
     padding-bottom:15%;
     border-radius: 100px;
     background-color: rgb(235, 197, 148);
-    
-    
   }
   
   .buttons{
     display:flex;
     justify-content:center;
-    margin:10px;
+    align-items: center;
+    
   }
-  
-  #paper{
-    margin:0 5%;
-  }
-  
   img{
     width:70%;
     height:auto;
@@ -56,14 +48,16 @@ body{
   #rock, #paper, #scissors:hover{
     cursor: pointer;
   }
-
+.btnImg{
+  display: flex;
+  justify-content: center;
+}
   @media only screen and (max-width: 600px){
     #rock{
         width:80%;
         height:auto;
         display: block;
         margin:25%;
-        
      }
      #paper{
         width:80%;
@@ -90,16 +84,11 @@ body{
         font-size: 25px;
     }
     .box{
-    
         border:solid 1px;
         margin:2% 10%;
         height:0;
         width: 25%;
         padding-bottom:25%;        
-        
-      }
-      .buttons{
-        margin: 25px 40px ;
       }
       .header{
         margin-top: 15%;
@@ -107,15 +96,12 @@ body{
   }
   
   @media only screen and (min-width: 600px){
-    #paper{
-        width:80%;
-        height:auto;
-        display: block;
-        margin-left:15%;
-        margin-top: 15%;
-        }
+    .btnImg{
+      width: 30%;
+     }
     .buttons{
-        margin: 45px 40px ;
+        margin:2% auto;
+        justify-items: center;
     }
     #result{
         margin:5%;
@@ -124,7 +110,10 @@ body{
     #name{
         font-size: 30px;
     }
-    
+    .flex{
+      width: 80%;
+      margin: 0 auto;
+    }
   }
   
   @media only screen and (min-width: 768px){
